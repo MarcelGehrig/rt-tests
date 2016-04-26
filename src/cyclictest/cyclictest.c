@@ -63,7 +63,7 @@
 	((~(clockid_t) (pid) << 3) | (clockid_t) (clock))
 #define CPUCLOCK_SCHED          2
 
-static int clock_nanosleep(clockid_t clock_id, int flags, const struct timespec *req,
+int clock_nanosleep(clockid_t clock_id, int flags, const struct timespec *req,
 			   struct timespec *rem)
 {
 	if (clock_id == CLOCK_THREAD_CPUTIME_ID)

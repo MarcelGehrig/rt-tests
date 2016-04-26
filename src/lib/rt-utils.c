@@ -22,6 +22,10 @@
 #include "rt-sched.h"
 #include "error.h"
 
+#ifndef SCHED_IDLE
+#define SCHED_IDLE 5
+#endif
+
 static char debugfileprefix[MAX_PATH];
 
 /*

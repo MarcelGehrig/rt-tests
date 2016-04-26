@@ -56,6 +56,11 @@
 #define __NR_sched_getattr		275
 #endif
 
+#ifdef __powerpc
+#define __NR_sched_setattr	    355
+#define __NR_sched_getattr	    356
+#endif
+
 struct sched_attr {
 	uint32_t size;
 	uint32_t sched_policy;
